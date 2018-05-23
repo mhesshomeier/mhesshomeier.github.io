@@ -75,6 +75,8 @@ var svg = d3.select("#chart").append("svg")
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .style("padding", "5px")
+
 
 var graph = d3.csv(csvpath, function(data) {
   data.forEach(function(d) {

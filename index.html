@@ -66,12 +66,14 @@
         <div class="col-md-5">
           <h3>Serious Weather Events</h3>
           <p>Climate change increases the frequency and severity of storms and other major weather events.
-          Arctic oscillation can cause XXXXcold snaps (?) while XXXXweather phenomena brings bigger nor'easters and hurricanes.
-          Extreme weather impacts our infrastructure and transit isn't ready. Boston's MBTA is already underfunded,
-          delayed maintenance puts stress on an old and heavily used system. Climate change will put increasing pressure
-          on the MBTA, which over a million rely on daily for transportation every day. Delays and service
-          interruptions will become more and more frequent, disrupting commuters' lives. Image Source: LolMBTA</p>
-          <!-- <a class="btn btn-primary" href="#">View Project</a> -->
+          For Boston, this means more extreme snow storms and sub zero cold snaps as a result of arctic oscillation which
+        allows arctic air to flow into lower latitudes. These extreme weather events impact our infrastructure and transit, especially the old and neglected MBTA.
+           Chronically underfunded, the MBTA has years of delayed maintenance that's vulnerable to extreme weather events. Climate change will put increasing pressure
+          on the MBTA, which over a million commuters rely on daily. Delays and service
+          interruptions will become more and more frequent, disrupting commuters' lives, especially lower income commuters who are more vulnerable to service disruptions.
+          Commuters don't have alternate transportation, rely on hourly wages, may live farther from their jobs and have less flexibility to work remotely are especially impacted by
+          service disruptions. Image Source: LolMBTA</p>
+          <!-- <a class="btn btn-primary" href="https://alexgbob.github.io/MBTA_map_new/">View Project</a> -->
         </div>
       </div>
       <!-- /.row -->
@@ -87,15 +89,17 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Transit Delays on a (very) cold day</h3>
+          <h3>Transit delays on a (very) cold day</h3>
           <p>Storms are an obvious cause of transit delays and damage to key transit infrastructure, but other types of
             extreme weather can cause problems too.
             On December 28, 2017 the MBTA trains and buses were slowed by mechanical malfunctions on a bitterly cold day,
             temps were in the single digits and it caused major problems along multiple routes. Both weather and commuter
-            volume impacts transit, so the worst delays cluster around peak commuting hours.
+            volume impacts transit, so the worst delays cluster around peak commuting hours. This streamgraph shows travel time
+            throughout the day, as measured by actual travel time as a percentage of benchmark travel time. The benchmark travel time is an average travel time for that particular time period- so it already accounts for the usual delays.
+            Travel time above the benchmark (in this visualization, over 100%) is an extreme delay.
 
           </p>
-          <a class="btn btn-primary" href="mhesshomeier.github.io/streamgraph_page">View Project</a>
+          <a class="btn btn-primary" href="https://alexgbob.github.io/Delay_Streamplot/">View Project</a>
         </div>
       </div>
       <!-- /.row -->
@@ -107,16 +111,19 @@
         <div class="col-md-7">
           <a href="#">
             <!-- link to map module -->
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/MBTA_map.png" alt="">
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Train Delays on December 28</h3>
-          <p>This map of the MBTA shows where the worst delays happened at XXXXX TIME on December 28, 2017.
+          <h3>Train delays on December 28</h3>
+          <p>This map of the MBTA shows where the worst delays happened between 8:30am and 8:45am on December 28, 2017.
             The effect of these delays is cumulative- commuters coming from the final stops experience delays
-            along the entire route.
+            along the entire route. As in the streamgraph, delays are measured by calculating the actual time as a percentage of the benchmark travel time.
+            Pulling performance data from the MBTA is difficult and imperfect, some of the connections are missing data and symbolized in grey.
+             These gaps are both an issue with the API itself and probably a little bit of user error too.
+
           </p>
-          <!-- <a class="btn btn-primary" href="#">View Project</a> -->
+          <a class="btn btn-primary" href="https://alexgbob.github.io/MBTA_map_new/">View Project</a>
         </div>
       </div>
       <!-- /.row -->
@@ -156,11 +163,13 @@
         </div>
         <div class="col-md-5">
           <h3>Midterm Goals</h3>
-          <p>Our original goal was to visualize how storms impact transit time geographically, using
-            isochrones on a map. We hoped to visualize both transit delays and vulnerability by showing
+          <p>Our original goal was to map how storms impact transit time, using
+            isochrones on a map of Boston. We hoped to visualize both transit delays and vulnerability by showing
             how travel isochrones change during a storm alongside income or poverty information for the
-            neighborhoods. Though our visualizations don't match the proposal, we were able to achieve some of our goals: querying MBTA data, visualizing
-             how transit time changes during a storm and comparing it to income data. Click through to see our midterm proposal.
+            neighborhoods. Though our visualizations don't match the proposal, we were able to achieve some of our goals: querying MBTA data and visualizing
+             how transit time changes during an extreme weather event. Next steps for this analysis would include visualizing how these delays impact
+             specific neighborhoods and vulnerable populations, comparing Dec. 28th to a normal day and looking at other storm events.
+             Click through to see our midterm proposal.
           </p>
           <!--  link to page with other charts -->
           <a class="btn btn-primary" href="mhesshomeier.github.io/bigdata_project">View Project</a>

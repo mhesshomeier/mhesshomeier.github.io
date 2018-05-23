@@ -10,4 +10,5 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  div#chart > svg {padding: 5px};
 }
